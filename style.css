@@ -95,7 +95,25 @@ body {
     cursor: pointer;
 }
 
+.btn:hover,
+.btn:active {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #F9FAF8;
+    transition: all 0.2s;
+}
+
+
+
 .btn-inverted {
+    padding: .8rem 3.2rem;
+    max-width: 14rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: #3882F6;
+    color:#e5e7eb;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
     border: 2px solid #F9FAF8;
     height: 80%;
 }
@@ -142,6 +160,7 @@ body {
 .nav-links a:active {
     color: #3882F6;
     cursor: pointer;
+    transition: all 0.2s;
 }
 
 .nav-links li {
