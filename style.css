@@ -1,0 +1,258 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+16 / 18 / 24 / 36 / 48
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+Extra-bold: 900
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: 
+#1F2937 - for hero and footer background
+
+- Tints:
+#E5E7EB - for quote section background, hero secondary text, header link text
+#F9FAF8 - for header logo text
+
+- Shades: 
+
+- Accents:
+#3882F6 - button colour, CTA background colour
+
+- Greys:
+#1F2937 - for quote font colour, information header text
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+
+/*************************/
+/* PAGE RESET           */
+/************************/
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #1F2937;
+
+}
+
+/*************************/
+/* REUSABLE COMPONENTS   */
+/************************/
+
+.container  {
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    max-width: 140rem;
+}
+
+.btn {
+    padding: .8rem 3.2rem;
+    max-width: 14rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: #3882F6;
+    color:#e5e7eb;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/*************************/
+/* HERO COMPONENTS      */
+/************************/
+
+.hero-section {
+    background-color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.2rem 0 9.6rem 0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 9.6rem;
+}
+
+.hero-logo {
+    font-size: 2.4rem;
+    color: #F9FAF8;
+}
+
+.nav-links{
+    display: flex;
+    gap: 1.8rem;
+}
+
+.nav-links a:link,
+.nav-links a:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #e5e7eb;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+    color: #3882F6;
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    flex: 1;
+    
+}
+
+.hero-title {
+    font-size: 4.8rem;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-desc {
+    color: #e5e7eb;
+    font-size: 1.8rem;
+}
+
+.hero-img {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+
+}
+
+.hero-img img {
+    width: 60rem; 
+    height: 40rem;
+}
+
+/*************************/
+/* INFO COMPONENTS      */
+/************************/
+
+.info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    background-color: white;
+    padding: 4.8rem 0 6.4rem 0;
+
+}
+
+.info-heading {
+    font-size: 3.6rem;
+    font-weight: 900;
+}
+
+.info-cards {
+    display: flex;
+    gap: 4.8rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    gap: 1.8rem;
+
+}
+
+.card img {
+    border: 4px solid #3882F6;
+    width: 100%;
+    height: 70%;
+    border-radius: 1.6rem;
+}
+
+.card .card-text {
+    font-size: 1.8rem;
+    color: grey;
+    display: flex;
+    text-align: center;
+}
+
+/*************************/
+/* QUOTE COMPONENTS      */
+/************************/
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    padding: 0 12.8rem;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+    padding: 12.8rem 0;
+}
+
+.quote-text {
+    display: flex;
+    color: #1F2937;
+    font-size: 3.6rem;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.quote-author {
+    display: flex;
+    justify-content: end;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
