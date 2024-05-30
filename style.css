@@ -95,6 +95,11 @@ body {
     cursor: pointer;
 }
 
+.btn-inverted {
+    border: 2px solid #F9FAF8;
+    height: 80%;
+}
+
 
 /*************************/
 /* HERO COMPONENTS      */
@@ -255,4 +260,56 @@ body {
     justify-content: end;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+/*************************/
+/* CTA COMPONENTS      */
+/************************/
+
+.cta-section {
+    background-color: white;
+    padding: 9.6rem 0;
+}
+
+.cta-banner {
+    padding: 4.9rem 8.0rem;
+    background-color: #3882F6;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta-title,
+.cta-desc {
+    color: #F9FAF8;
+}
+
+.cta-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.cta-desc {
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+}
+
+/*************************/
+/* FOOTER COMPONENTS      */
+/************************/
+
+.footer-section {
+    background-color: #1F2937;
+    padding: 3.6rem 0;
+}
+
+.footer-content {
+    text-align: center;
+    color: #E5E7EB;
+    font-size: 1.6rem;
 }
